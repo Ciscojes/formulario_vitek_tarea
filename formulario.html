@@ -1,19 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vitek jesus tarea</title>
-
-    <link rel="stylesheet" href="style.css">
-    
-    <h1>formulario del curso</h1>
-
-    <h2>Datos personales</h2>
-
-
+    <title>Formulario de Registro</title>
 </head>
 <body>
-    
+
+    <h1>Registro para Curso Académico</h1>
+
+    <form action="#" method="post">
+
+        <!-- Nombre -->
+        <label for="nombre">Nombre completo:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <!-- Correo -->
+        <label for="correo">Correo electrónico:</label><br>
+        <input type="email" id="correo" name="correo" required><br><br>
+
+        <!-- Edad -->
+        <label for="edad">Edad:</label><br>
+        <input type="number" id="edad" name="edad" min="15" max="100" required><br><br>
+
+        <!-- Fecha -->
+        <label for="fecha">Fecha de nacimiento:</label><br>
+        <input type="date" id="fecha" name="fecha" required><br><br>
+
+        <!-- Select -->
+        <label for="curso">Seleccione el curso:</label><br>
+        <select id="curso" name="curso" required>
+            <option value="">--Seleccione--</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+        </select><br><br>
+
+        <p>Modalidad:</p>
+
+        <input type="radio" id="virtual" name="modalidad" value="virtual" required>
+        <label for="virtual">Virtual</label><br>
+
+        <input type="radio" id="presencial" name="modalidad" value="presencial">
+        <label for="presencial">Presencial</label><br><br>
+
+        <!-- Checkbox -->
+        <p>Temas de interés:</p>
+
+        <input type="checkbox" id="frontend" name="interes" value="frontend">
+        <label for="frontend">Frontend</label><br>
+
+        <input type="checkbox" id="backend" name="interes" value="backend">
+        <label for="backend">Backend</label><br>
+
+        <input type="checkbox" id="basesdatos" name="interes" value="basesdatos">
+        <label for="basesdatos">Bases de Datos</label><br><br>
+
+        <!-- Comentario -->
+        <label for="comentario">Comentarios:</label><br>
+        <textarea id="comentario" name="comentario" rows="4" cols="30"></textarea><br><br>
+
+        <!-- Botones -->
+        <input type="submit" value="Registrarse">
+        <input type="reset" value="Limpiar">
+
+    </form>
+
 </body>
 </html>
