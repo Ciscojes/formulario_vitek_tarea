@@ -1,6 +1,6 @@
 # Formulario Vitek Tarea
 
-Proyecto de práctica utilizando HTML y CSS.
+Proyecto de práctica utilizando HTML.
 
 ## Tecnologías utilizadas
 
